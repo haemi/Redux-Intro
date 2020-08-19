@@ -8,22 +8,41 @@ struct AppState {
 }
 
 enum AppAction {
+    case count(CountAction)
+    // case another action category
+    // case and another action category
+}
+
+enum CountAction {
     case increment
     case decrement
 }
 
-let counterReducer = Reducer<AppAction, AppState> { action, state in
+let counterReducer = Reducer<CountAction, Int> { action, state in
     switch action {
     case .decrement:
-        return AppState(count: state.count - 1)
+        return state - 1
     case .increment:
-        return AppState(count: state.count + 1)
+        return state + 1
     }
 }
 
+let appReducer = counterReducer.lift(
+    actionGetter: { (appAction: AppAction) -> CountAction? in
+        guard case let AppAction.count(countAction) = appAction else { return nil }
+        return countAction
+    },
+    stateGetter: { (appState: AppState) -> Int in
+        appState.count
+    },
+    stateSetter: { (appState: inout AppState, newCount: Int) in
+        appState.count = newCount
+    }
+)
+
 let store = ReduxStoreBase<AppAction, AppState>(
     subject: .combine(initialValue: AppState(count: 0)),
-    reducer: counterReducer,
+    reducer: appReducer,
     middleware: IdentityMiddleware() // <- No side-effects yet
 )
 
@@ -40,11 +59,11 @@ class ViewController: UIViewController {
             .assign(to: \.text, on: label)
     }
     @IBAction func minusButtonPressed(_ sender: Any) {
-        store.dispatch(.decrement)
+        store.dispatch(.count(.decrement))
     }
 
     @IBAction func plusButtonPressed(_ sender: Any) {
-        store.dispatch(.increment)
+        store.dispatch(.count(.increment))
     }
 }
 
