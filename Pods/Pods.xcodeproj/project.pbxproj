@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099A226EB9AAF73986B557FB405F7BFF /* Pods-Redux1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05031CFE666451D1F647C95B799ECF72 /* Pods-Redux1-dummy.m */; };
+		0F673AE36068AA4803CA846C0867D2BE /* ReplayLastSubjectType+BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A5C80A71B9283BB88C90DBC3C8041 /* ReplayLastSubjectType+BehaviorSubject.swift */; };
+		0F79D8755DFAA1E797632247C15B2495 /* StateProvider+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA236C4BDA229F79499AD163AC1ED5 /* StateProvider+TypeErasure.swift */; };
+		1308A91B116A0D96E3C540B25CA9D20E /* Pods-Redux1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA9CFC70AACAEDBC64F84A95A16D849 /* Pods-Redux1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135DA9D4E0B839FB2760D4FD5CB18BF4 /* AfterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B8D0440869393C79CA812EC52129F /* AfterReducer.swift */; };
+		13BF71FDAF8F43F05A697A7BF0D3F84E /* CombineRex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DED8FD692723394026094B7E3EE0F3A4 /* CombineRex-dummy.m */; };
+		1D2184A156692D6F5306BAC739C57B1B /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB34156C28D61DBC67150492789569 /* Reducer.swift */; };
+		3249B132643C4784ED4BA341FF1304B1 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC599A0739B4EB6A57257EF1DA6099 /* Middleware.swift */; };
+		32A71F37B3CE3B6B2B981FC6CD8AC543 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF944D484AA3870CF5431E2776B3AFB /* Combine.framework */; };
+		3E3A3B6DBFBB4D114CB44DDC51ABF86F /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8316C20D4EB59B64C17D80930742FCB4 /* DispatchQueue.swift */; };
+		488ECA191E160EC91FC8216244A8F12F /* PublisherType+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA5F90CADA266A0C6AC355945D9CCD /* PublisherType+Publisher.swift */; };
+		498672B087DC5097C388A9B5A2AA6EE7 /* ReactiveWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1741B76B448DC361DD3150F4AA2F01 /* ReactiveWrappers.swift */; };
+		49FEACA0985D44721277840C3CB498FE /* ReduxStoreBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB79B8C7E727D310AD22342AE7BF44 /* ReduxStoreBase.swift */; };
+		4A983FB5E1A0229B4FC543B5F624A821 /* CombineRex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C13C5A88EB51931DA5640885FC26F590 /* CombineRex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CBE64B47E44CF8C0133163D08A1BD4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24546BE0EF6EE5EF7E013DEF184A1C1 /* Foundation.framework */; };
+		4E73D607EA8C368F4213D25909E95F5E /* ShouldEmitValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C210D666447DC8A354598879D95B745 /* ShouldEmitValue.swift */; };
+		527FEE830E7C133CBE17B2C97A172B76 /* IdentityMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9725AFCBD4BBC646E2324AC6FBCE1F /* IdentityMiddleware.swift */; };
+		5551622D5573E32C683EC1A3FBC24BA0 /* StoreType+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B827B7FEA350AD3C42285ADACF27B /* StoreType+TypeErasure.swift */; };
+		57E0933A31AD1DAE3E88C3696E94D4BF /* SubscriberType+Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3B1E63BE9AAB8BAF12B90979ECBD96 /* SubscriberType+Subscriber.swift */; };
+		5C25F792004B492AF88FEBFDD1988D4E /* ActionHandler+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD2E5342D7E5516FF6DA618DDD7D2AC /* ActionHandler+TypeErasure.swift */; };
+		6897F24A4BC8EB6A36BA6F04E921C610 /* ActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75A3D32482DA0EF83C6357D66079AA /* ActionHandler.swift */; };
+		73D70803E4502DD9CCAC5634D92F9A00 /* SubjectType+PassthroughSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71A7DA6D9A9A35810B99B4F6AFE95EB /* SubjectType+PassthroughSubject.swift */; };
+		7971372B67665ECD0DF477B2DD4F0AC1 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B02C1AD8A4E647AAF09AA48E6E1DCC /* TypeAlias.swift */; };
+		80593BB358423953AA115BA2643E7B62 /* ReduxPipelineWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3732913616B8392F03E11DA7E0FC2487 /* ReduxPipelineWrapper.swift */; };
+		84CF3EE0C8241B7024BCA691A7BCE125 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF262391B24612F18E3AEC9C6A33A9 /* Operator.swift */; };
+		8F5A1BE3B10DF9E7CD2268199DBCEFDB /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B26F8D98C6F63BEB714983C123054 /* StoreType.swift */; };
+		92CF0EAA3BE30B677035B44FED52DA39 /* SwiftRex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6681B9630FEA6DF9CE89EF4093A2AB /* SwiftRex.framework */; };
+		975D9B04D75905F236144F3BFBA6F18E /* ActionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E11808CDF9EA5A2630FC64AA5534F6D /* ActionSource.swift */; };
+		9EA492E4D88E8CDE934A453B35805762 /* Middleware+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC8CB7655B21D9E805C7FF0F747D4 /* Middleware+TypeErasure.swift */; };
+		A2B3A00C186B839DEBE1FC1B2716E302 /* SwiftRex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA20823EDE84FD70435B7A22944041 /* SwiftRex-dummy.m */; };
+		A73F336DE122B38BD96A76EE6E5D9D1B /* SwiftRex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B69CAC46CF29800BD061942DD6024A /* SwiftRex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C01A77C427A7D83B75B77B12168D421B /* ReduxStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88326C1287D8CECD89539156301E7903 /* ReduxStoreProtocol.swift */; };
+		C375C2A29AE1EBCD1D4C382BF6E2D36F /* StateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972AA6EAA03D96C42E48C8042FAFFB4 /* StateProvider.swift */; };
+		C4CF2310A457F69F0E5AF8C2261B0AD3 /* LiftMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E368E15F4060D49515FD96F2CB3578 /* LiftMiddleware.swift */; };
+		D0259FCB7B634114E2020B203780950B /* SubscriptionType+Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D73F4F218F59106E076ED8764830B6 /* SubscriptionType+Cancellable.swift */; };
+		D3F5C195304C477217E3B63B9E3423F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24546BE0EF6EE5EF7E013DEF184A1C1 /* Foundation.framework */; };
+		D491F0B50DE86DEBC6A52B6A05043D9E /* StoreType+Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB111D434C9CB66DA42A573F8A96C49 /* StoreType+Projection.swift */; };
+		E34595681C5CE54ADF414E4AD18E134C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24546BE0EF6EE5EF7E013DEF184A1C1 /* Foundation.framework */; };
+		F1FB08C066D9CF024A68ABD5B523CB75 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B975BC3FD34FFFB47FCB31AF3DEA4D /* Monoid.swift */; };
+		F9D9E5496C0FA1B30DAC99A7D3C10E4B /* ComposedMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B329768D075EC85F49214E6BF5CC314 /* ComposedMiddleware.swift */; };
+		FBD81AEDD16DB9D9A92AA36C42B8ABF6 /* ObservableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559FE3846D24CBC2D80B78734A094A34 /* ObservableViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		677583236494E467087DFB04E0CD4414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3769B980009A300F52286A2BE0D57433;
+			remoteInfo = CombineRex;
+		};
+		9DE16B0608F90C7DBF1F91B600E58CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E46AEDED41B7542FB26E1422EA11F1;
+			remoteInfo = SwiftRex;
+		};
+		DA8A32D506C31B016BC1AEDF5849333A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E46AEDED41B7542FB26E1422EA11F1;
+			remoteInfo = SwiftRex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05031CFE666451D1F647C95B799ECF72 /* Pods-Redux1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Redux1-dummy.m"; sourceTree = "<group>"; };
+		051D474073825B6C70B4C9086240B9A9 /* CombineRex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CombineRex.framework; path = CombineRex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A388D0C4932BC8B84C52167772D277C /* SwiftRex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftRex.framework; path = SwiftRex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1741B76B448DC361DD3150F4AA2F01 /* ReactiveWrappers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReactiveWrappers.swift; path = Sources/SwiftRex/Foundation/ReactiveWrappers.swift; sourceTree = "<group>"; };
+		0B6681B9630FEA6DF9CE89EF4093A2AB /* SwiftRex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftRex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C210D666447DC8A354598879D95B745 /* ShouldEmitValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShouldEmitValue.swift; path = Sources/SwiftRex/Foundation/ShouldEmitValue.swift; sourceTree = "<group>"; };
+		0F2B26F8D98C6F63BEB714983C123054 /* StoreType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreType.swift; path = Sources/SwiftRex/CoreTypes/Store/StoreType.swift; sourceTree = "<group>"; };
+		11E368E15F4060D49515FD96F2CB3578 /* LiftMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiftMiddleware.swift; path = Sources/SwiftRex/Middlewares/LiftMiddleware.swift; sourceTree = "<group>"; };
+		1EFBB1D53F3442FB807365F07F8961F0 /* Pods-Redux1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Redux1.debug.xcconfig"; sourceTree = "<group>"; };
+		28EC599A0739B4EB6A57257EF1DA6099 /* Middleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = Sources/SwiftRex/CoreTypes/Pipeline/Middleware.swift; sourceTree = "<group>"; };
+		2A9BC8CB7655B21D9E805C7FF0F747D4 /* Middleware+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Middleware+TypeErasure.swift"; path = "Sources/SwiftRex/CoreTypes/Pipeline/Middleware+TypeErasure.swift"; sourceTree = "<group>"; };
+		331F1B99296A8387E32949775837D036 /* Pods-Redux1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Redux1.release.xcconfig"; sourceTree = "<group>"; };
+		3732913616B8392F03E11DA7E0FC2487 /* ReduxPipelineWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReduxPipelineWrapper.swift; path = Sources/SwiftRex/CoreTypes/StoreImplementations/ReduxPipelineWrapper.swift; sourceTree = "<group>"; };
+		3CA9CFC70AACAEDBC64F84A95A16D849 /* Pods-Redux1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Redux1-umbrella.h"; sourceTree = "<group>"; };
+		3CDC7A9138B1B92C828DE2DC0E6F9231 /* CombineRex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CombineRex-prefix.pch"; sourceTree = "<group>"; };
+		485D65AE0CC51A1C62BD5CB9BE186CA7 /* Pods-Redux1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Redux1-Info.plist"; sourceTree = "<group>"; };
+		4AF871560E64378319835F6A99B4952F /* SwiftRex-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftRex-Info.plist"; sourceTree = "<group>"; };
+		559FE3846D24CBC2D80B78734A094A34 /* ObservableViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableViewModel.swift; path = Sources/CombineRex/ObservableViewModel.swift; sourceTree = "<group>"; };
+		5EB111D434C9CB66DA42A573F8A96C49 /* StoreType+Projection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoreType+Projection.swift"; path = "Sources/SwiftRex/CoreTypes/Store/StoreType+Projection.swift"; sourceTree = "<group>"; };
+		6A2B8D0440869393C79CA812EC52129F /* AfterReducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AfterReducer.swift; path = Sources/SwiftRex/CoreTypes/Pipeline/AfterReducer.swift; sourceTree = "<group>"; };
+		6C13EE01525413659A171CBFD6100D5B /* Pods-Redux1-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Redux1-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D85D06ED31B43DEF56747B80324D760 /* SwiftRex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftRex.debug.xcconfig; sourceTree = "<group>"; };
+		6E11808CDF9EA5A2630FC64AA5534F6D /* ActionSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSource.swift; path = Sources/SwiftRex/CoreTypes/Store/ActionSource.swift; sourceTree = "<group>"; };
+		77BF262391B24612F18E3AEC9C6A33A9 /* Operator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operator.swift; path = Sources/SwiftRex/Foundation/Operator.swift; sourceTree = "<group>"; };
+		7B329768D075EC85F49214E6BF5CC314 /* ComposedMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComposedMiddleware.swift; path = Sources/SwiftRex/Middlewares/ComposedMiddleware.swift; sourceTree = "<group>"; };
+		7F3B1E63BE9AAB8BAF12B90979ECBD96 /* SubscriberType+Subscriber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SubscriberType+Subscriber.swift"; path = "Sources/CombineRex/SubscriberType+Subscriber.swift"; sourceTree = "<group>"; };
+		8316C20D4EB59B64C17D80930742FCB4 /* DispatchQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueue.swift; path = Sources/SwiftRex/Foundation/DispatchQueue.swift; sourceTree = "<group>"; };
+		8522D789EAA8AA7B36D905A6A6E5E565 /* SwiftRex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftRex.release.xcconfig; sourceTree = "<group>"; };
+		88326C1287D8CECD89539156301E7903 /* ReduxStoreProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReduxStoreProtocol.swift; path = Sources/SwiftRex/CoreTypes/StoreImplementations/ReduxStoreProtocol.swift; sourceTree = "<group>"; };
+		9357A644A2817D9FA21AB394E9E9CA5A /* Pods-Redux1-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Redux1-frameworks.sh"; sourceTree = "<group>"; };
+		93B975BC3FD34FFFB47FCB31AF3DEA4D /* Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Sources/SwiftRex/Foundation/Monoid.swift; sourceTree = "<group>"; };
+		96C00A691485E443ABFB0A4E073F7BFC /* Pods_Redux1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Redux1.framework; path = "Pods-Redux1.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFB34156C28D61DBC67150492789569 /* Reducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reducer.swift; path = Sources/SwiftRex/CoreTypes/Pipeline/Reducer.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D9725AFCBD4BBC646E2324AC6FBCE1F /* IdentityMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentityMiddleware.swift; path = Sources/SwiftRex/Middlewares/IdentityMiddleware.swift; sourceTree = "<group>"; };
+		A1B69CAC46CF29800BD061942DD6024A /* SwiftRex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRex-umbrella.h"; sourceTree = "<group>"; };
+		A4523D8EE1D90FF7804D9B477996126D /* CombineRex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CombineRex.release.xcconfig; sourceTree = "<group>"; };
+		A98B827B7FEA350AD3C42285ADACF27B /* StoreType+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoreType+TypeErasure.swift"; path = "Sources/SwiftRex/CoreTypes/Store/StoreType+TypeErasure.swift"; sourceTree = "<group>"; };
+		B24546BE0EF6EE5EF7E013DEF184A1C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B972AA6EAA03D96C42E48C8042FAFFB4 /* StateProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateProvider.swift; path = Sources/SwiftRex/CoreTypes/Store/StateProvider.swift; sourceTree = "<group>"; };
+		BAA51B78AA1E58F76C022A26F8469F14 /* SwiftRex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftRex.modulemap; sourceTree = "<group>"; };
+		C13C5A88EB51931DA5640885FC26F590 /* CombineRex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CombineRex-umbrella.h"; sourceTree = "<group>"; };
+		C3BA20823EDE84FD70435B7A22944041 /* SwiftRex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftRex-dummy.m"; sourceTree = "<group>"; };
+		C594FD9B6AE27366D1B8B50071E507DA /* CombineRex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CombineRex.modulemap; sourceTree = "<group>"; };
+		C7C78CE3A8940538F161B83F5D4B876B /* CombineRex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CombineRex.debug.xcconfig; sourceTree = "<group>"; };
+		C8B02C1AD8A4E647AAF09AA48E6E1DCC /* TypeAlias.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeAlias.swift; path = Sources/SwiftRex/Foundation/TypeAlias.swift; sourceTree = "<group>"; };
+		DB75A3D32482DA0EF83C6357D66079AA /* ActionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionHandler.swift; path = Sources/SwiftRex/CoreTypes/Store/ActionHandler.swift; sourceTree = "<group>"; };
+		DBBF8B2597E59B1A2B817BA392313089 /* SwiftRex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRex-prefix.pch"; sourceTree = "<group>"; };
+		DE8A5C80A71B9283BB88C90DBC3C8041 /* ReplayLastSubjectType+BehaviorSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReplayLastSubjectType+BehaviorSubject.swift"; path = "Sources/CombineRex/ReplayLastSubjectType+BehaviorSubject.swift"; sourceTree = "<group>"; };
+		DED8FD692723394026094B7E3EE0F3A4 /* CombineRex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CombineRex-dummy.m"; sourceTree = "<group>"; };
+		E3BA5F90CADA266A0C6AC355945D9CCD /* PublisherType+Publisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PublisherType+Publisher.swift"; path = "Sources/CombineRex/PublisherType+Publisher.swift"; sourceTree = "<group>"; };
+		E71A7DA6D9A9A35810B99B4F6AFE95EB /* SubjectType+PassthroughSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SubjectType+PassthroughSubject.swift"; path = "Sources/CombineRex/SubjectType+PassthroughSubject.swift"; sourceTree = "<group>"; };
+		E91BE61C1FF66624E2BD36B09A8E37EA /* CombineRex-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CombineRex-Info.plist"; sourceTree = "<group>"; };
+		ECDA236C4BDA229F79499AD163AC1ED5 /* StateProvider+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StateProvider+TypeErasure.swift"; path = "Sources/SwiftRex/CoreTypes/Store/StateProvider+TypeErasure.swift"; sourceTree = "<group>"; };
+		F1D73F4F218F59106E076ED8764830B6 /* SubscriptionType+Cancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SubscriptionType+Cancellable.swift"; path = "Sources/CombineRex/SubscriptionType+Cancellable.swift"; sourceTree = "<group>"; };
+		F473AFAB061460B1D8D23236492022E6 /* Pods-Redux1-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Redux1-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F5EB79B8C7E727D310AD22342AE7BF44 /* ReduxStoreBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReduxStoreBase.swift; path = Sources/SwiftRex/CoreTypes/StoreImplementations/ReduxStoreBase.swift; sourceTree = "<group>"; };
+		F8CC5BE4D37ADDF90F51AF58C874C7C3 /* Pods-Redux1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Redux1.modulemap"; sourceTree = "<group>"; };
+		FDD2E5342D7E5516FF6DA618DDD7D2AC /* ActionHandler+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ActionHandler+TypeErasure.swift"; path = "Sources/SwiftRex/CoreTypes/Store/ActionHandler+TypeErasure.swift"; sourceTree = "<group>"; };
+		FEF944D484AA3870CF5431E2776B3AFB /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Combine.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AD43C38A99BB918FC1728F158CF72BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F5C195304C477217E3B63B9E3423F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA49422F06A0FA0F63BDBE405DE0AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34595681C5CE54ADF414E4AD18E134C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DB7F91758D33C31AAA435B7D44046A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A71F37B3CE3B6B2B981FC6CD8AC543 /* Combine.framework in Frameworks */,
+				4CBE64B47E44CF8C0133163D08A1BD4F /* Foundation.framework in Frameworks */,
+				92CF0EAA3BE30B677035B44FED52DA39 /* SwiftRex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CCCBB326027F8B331329F0D0C52A73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				051D474073825B6C70B4C9086240B9A9 /* CombineRex.framework */,
+				96C00A691485E443ABFB0A4E073F7BFC /* Pods_Redux1.framework */,
+				0A388D0C4932BC8B84C52167772D277C /* SwiftRex.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2066748B4443507153C2A57C1ACC5854 /* SwiftRex */ = {
+			isa = PBXGroup;
+			children = (
+				DB75A3D32482DA0EF83C6357D66079AA /* ActionHandler.swift */,
+				FDD2E5342D7E5516FF6DA618DDD7D2AC /* ActionHandler+TypeErasure.swift */,
+				6E11808CDF9EA5A2630FC64AA5534F6D /* ActionSource.swift */,
+				6A2B8D0440869393C79CA812EC52129F /* AfterReducer.swift */,
+				7B329768D075EC85F49214E6BF5CC314 /* ComposedMiddleware.swift */,
+				8316C20D4EB59B64C17D80930742FCB4 /* DispatchQueue.swift */,
+				9D9725AFCBD4BBC646E2324AC6FBCE1F /* IdentityMiddleware.swift */,
+				11E368E15F4060D49515FD96F2CB3578 /* LiftMiddleware.swift */,
+				28EC599A0739B4EB6A57257EF1DA6099 /* Middleware.swift */,
+				2A9BC8CB7655B21D9E805C7FF0F747D4 /* Middleware+TypeErasure.swift */,
+				93B975BC3FD34FFFB47FCB31AF3DEA4D /* Monoid.swift */,
+				77BF262391B24612F18E3AEC9C6A33A9 /* Operator.swift */,
+				0B1741B76B448DC361DD3150F4AA2F01 /* ReactiveWrappers.swift */,
+				9CFB34156C28D61DBC67150492789569 /* Reducer.swift */,
+				3732913616B8392F03E11DA7E0FC2487 /* ReduxPipelineWrapper.swift */,
+				F5EB79B8C7E727D310AD22342AE7BF44 /* ReduxStoreBase.swift */,
+				88326C1287D8CECD89539156301E7903 /* ReduxStoreProtocol.swift */,
+				0C210D666447DC8A354598879D95B745 /* ShouldEmitValue.swift */,
+				B972AA6EAA03D96C42E48C8042FAFFB4 /* StateProvider.swift */,
+				ECDA236C4BDA229F79499AD163AC1ED5 /* StateProvider+TypeErasure.swift */,
+				0F2B26F8D98C6F63BEB714983C123054 /* StoreType.swift */,
+				5EB111D434C9CB66DA42A573F8A96C49 /* StoreType+Projection.swift */,
+				A98B827B7FEA350AD3C42285ADACF27B /* StoreType+TypeErasure.swift */,
+				C8B02C1AD8A4E647AAF09AA48E6E1DCC /* TypeAlias.swift */,
+				65FA7A218755E81EEA06B088255A6D19 /* Support Files */,
+			);
+			name = SwiftRex;
+			path = SwiftRex;
+			sourceTree = "<group>";
+		};
+		25E49296B57321FFDFB3CC23768DB7A8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FEF944D484AA3870CF5431E2776B3AFB /* Combine.framework */,
+				B24546BE0EF6EE5EF7E013DEF184A1C1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		65FA7A218755E81EEA06B088255A6D19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA51B78AA1E58F76C022A26F8469F14 /* SwiftRex.modulemap */,
+				C3BA20823EDE84FD70435B7A22944041 /* SwiftRex-dummy.m */,
+				4AF871560E64378319835F6A99B4952F /* SwiftRex-Info.plist */,
+				DBBF8B2597E59B1A2B817BA392313089 /* SwiftRex-prefix.pch */,
+				A1B69CAC46CF29800BD061942DD6024A /* SwiftRex-umbrella.h */,
+				6D85D06ED31B43DEF56747B80324D760 /* SwiftRex.debug.xcconfig */,
+				8522D789EAA8AA7B36D905A6A6E5E565 /* SwiftRex.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftRex";
+			sourceTree = "<group>";
+		};
+		676C892CDF40BF199B897137D1C80375 /* Pods-Redux1 */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC5BE4D37ADDF90F51AF58C874C7C3 /* Pods-Redux1.modulemap */,
+				F473AFAB061460B1D8D23236492022E6 /* Pods-Redux1-acknowledgements.markdown */,
+				6C13EE01525413659A171CBFD6100D5B /* Pods-Redux1-acknowledgements.plist */,
+				05031CFE666451D1F647C95B799ECF72 /* Pods-Redux1-dummy.m */,
+				9357A644A2817D9FA21AB394E9E9CA5A /* Pods-Redux1-frameworks.sh */,
+				485D65AE0CC51A1C62BD5CB9BE186CA7 /* Pods-Redux1-Info.plist */,
+				3CA9CFC70AACAEDBC64F84A95A16D849 /* Pods-Redux1-umbrella.h */,
+				1EFBB1D53F3442FB807365F07F8961F0 /* Pods-Redux1.debug.xcconfig */,
+				331F1B99296A8387E32949775837D036 /* Pods-Redux1.release.xcconfig */,
+			);
+			name = "Pods-Redux1";
+			path = "Target Support Files/Pods-Redux1";
+			sourceTree = "<group>";
+		};
+		8268DF1C725B1145BA587E44D3087FCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A944FE5F3EFB577F83CEB6FF9E9F7370 /* CombineRex */,
+				2066748B4443507153C2A57C1ACC5854 /* SwiftRex */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A944FE5F3EFB577F83CEB6FF9E9F7370 /* CombineRex */ = {
+			isa = PBXGroup;
+			children = (
+				559FE3846D24CBC2D80B78734A094A34 /* ObservableViewModel.swift */,
+				E3BA5F90CADA266A0C6AC355945D9CCD /* PublisherType+Publisher.swift */,
+				DE8A5C80A71B9283BB88C90DBC3C8041 /* ReplayLastSubjectType+BehaviorSubject.swift */,
+				E71A7DA6D9A9A35810B99B4F6AFE95EB /* SubjectType+PassthroughSubject.swift */,
+				7F3B1E63BE9AAB8BAF12B90979ECBD96 /* SubscriberType+Subscriber.swift */,
+				F1D73F4F218F59106E076ED8764830B6 /* SubscriptionType+Cancellable.swift */,
+				DC4C068161F6B8BA77197973E1E83752 /* Support Files */,
+			);
+			name = CombineRex;
+			path = CombineRex;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DC052B81D75CBD98E1CD232921A472AB /* Frameworks */,
+				8268DF1C725B1145BA587E44D3087FCA /* Pods */,
+				02CCCBB326027F8B331329F0D0C52A73 /* Products */,
+				DFE495218411B7A2AFB77FBFE8297D75 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DC052B81D75CBD98E1CD232921A472AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B6681B9630FEA6DF9CE89EF4093A2AB /* SwiftRex.framework */,
+				25E49296B57321FFDFB3CC23768DB7A8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC4C068161F6B8BA77197973E1E83752 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C594FD9B6AE27366D1B8B50071E507DA /* CombineRex.modulemap */,
+				DED8FD692723394026094B7E3EE0F3A4 /* CombineRex-dummy.m */,
+				E91BE61C1FF66624E2BD36B09A8E37EA /* CombineRex-Info.plist */,
+				3CDC7A9138B1B92C828DE2DC0E6F9231 /* CombineRex-prefix.pch */,
+				C13C5A88EB51931DA5640885FC26F590 /* CombineRex-umbrella.h */,
+				C7C78CE3A8940538F161B83F5D4B876B /* CombineRex.debug.xcconfig */,
+				A4523D8EE1D90FF7804D9B477996126D /* CombineRex.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CombineRex";
+			sourceTree = "<group>";
+		};
+		DFE495218411B7A2AFB77FBFE8297D75 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				676C892CDF40BF199B897137D1C80375 /* Pods-Redux1 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24B0F2607D66F85D8CFBAB90BD1472AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73F336DE122B38BD96A76EE6E5D9D1B /* SwiftRex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B7A0292BB1AF20E47AE837CF0FAAFAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1308A91B116A0D96E3C540B25CA9D20E /* Pods-Redux1-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705C297BBDBB9051BB2870E67F44D99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A983FB5E1A0229B4FC543B5F624A821 /* CombineRex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3769B980009A300F52286A2BE0D57433 /* CombineRex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A216187C826ECCADBA30EB3FC1122107 /* Build configuration list for PBXNativeTarget "CombineRex" */;
+			buildPhases = (
+				9705C297BBDBB9051BB2870E67F44D99 /* Headers */,
+				6C33D2D3718AE0A65C50CDAE948554D3 /* Sources */,
+				96DB7F91758D33C31AAA435B7D44046A /* Frameworks */,
+				892977B1D3C13B3475E3ADFF44842BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E76E6CAD69458190D438D346E88663A /* PBXTargetDependency */,
+			);
+			name = CombineRex;
+			productName = CombineRex;
+			productReference = 051D474073825B6C70B4C9086240B9A9 /* CombineRex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		760D4C348922BFA7A8B80848877CC5B1 /* Pods-Redux1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD82254986646F1FB43E9DD23D90492 /* Build configuration list for PBXNativeTarget "Pods-Redux1" */;
+			buildPhases = (
+				2B7A0292BB1AF20E47AE837CF0FAAFAF /* Headers */,
+				78E07D00EE7CF3CD299D74FEBCD78F4B /* Sources */,
+				1AD43C38A99BB918FC1728F158CF72BE /* Frameworks */,
+				5D4A447C948E387C399704ED3D675DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A0F5E67927CB409722F993E8CB2A7E4 /* PBXTargetDependency */,
+				86A499A99805654843CFB9F4F3D914FD /* PBXTargetDependency */,
+			);
+			name = "Pods-Redux1";
+			productName = "Pods-Redux1";
+			productReference = 96C00A691485E443ABFB0A4E073F7BFC /* Pods_Redux1.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7E46AEDED41B7542FB26E1422EA11F1 /* SwiftRex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26173DD58C790C004E97D9B95613DC8A /* Build configuration list for PBXNativeTarget "SwiftRex" */;
+			buildPhases = (
+				24B0F2607D66F85D8CFBAB90BD1472AA /* Headers */,
+				1BA1224B6CD0C62D0E112335054D95A9 /* Sources */,
+				3AA49422F06A0FA0F63BDBE405DE0AE0 /* Frameworks */,
+				9BCD3E02F490DA3D2E15006952C7B996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRex;
+			productName = SwiftRex;
+			productReference = 0A388D0C4932BC8B84C52167772D277C /* SwiftRex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 02CCCBB326027F8B331329F0D0C52A73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3769B980009A300F52286A2BE0D57433 /* CombineRex */,
+				760D4C348922BFA7A8B80848877CC5B1 /* Pods-Redux1 */,
+				B7E46AEDED41B7542FB26E1422EA11F1 /* SwiftRex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D4A447C948E387C399704ED3D675DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892977B1D3C13B3475E3ADFF44842BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCD3E02F490DA3D2E15006952C7B996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA1224B6CD0C62D0E112335054D95A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25F792004B492AF88FEBFDD1988D4E /* ActionHandler+TypeErasure.swift in Sources */,
+				6897F24A4BC8EB6A36BA6F04E921C610 /* ActionHandler.swift in Sources */,
+				975D9B04D75905F236144F3BFBA6F18E /* ActionSource.swift in Sources */,
+				135DA9D4E0B839FB2760D4FD5CB18BF4 /* AfterReducer.swift in Sources */,
+				F9D9E5496C0FA1B30DAC99A7D3C10E4B /* ComposedMiddleware.swift in Sources */,
+				3E3A3B6DBFBB4D114CB44DDC51ABF86F /* DispatchQueue.swift in Sources */,
+				527FEE830E7C133CBE17B2C97A172B76 /* IdentityMiddleware.swift in Sources */,
+				C4CF2310A457F69F0E5AF8C2261B0AD3 /* LiftMiddleware.swift in Sources */,
+				9EA492E4D88E8CDE934A453B35805762 /* Middleware+TypeErasure.swift in Sources */,
+				3249B132643C4784ED4BA341FF1304B1 /* Middleware.swift in Sources */,
+				F1FB08C066D9CF024A68ABD5B523CB75 /* Monoid.swift in Sources */,
+				84CF3EE0C8241B7024BCA691A7BCE125 /* Operator.swift in Sources */,
+				498672B087DC5097C388A9B5A2AA6EE7 /* ReactiveWrappers.swift in Sources */,
+				1D2184A156692D6F5306BAC739C57B1B /* Reducer.swift in Sources */,
+				80593BB358423953AA115BA2643E7B62 /* ReduxPipelineWrapper.swift in Sources */,
+				49FEACA0985D44721277840C3CB498FE /* ReduxStoreBase.swift in Sources */,
+				C01A77C427A7D83B75B77B12168D421B /* ReduxStoreProtocol.swift in Sources */,
+				4E73D607EA8C368F4213D25909E95F5E /* ShouldEmitValue.swift in Sources */,
+				0F79D8755DFAA1E797632247C15B2495 /* StateProvider+TypeErasure.swift in Sources */,
+				C375C2A29AE1EBCD1D4C382BF6E2D36F /* StateProvider.swift in Sources */,
+				D491F0B50DE86DEBC6A52B6A05043D9E /* StoreType+Projection.swift in Sources */,
+				5551622D5573E32C683EC1A3FBC24BA0 /* StoreType+TypeErasure.swift in Sources */,
+				8F5A1BE3B10DF9E7CD2268199DBCEFDB /* StoreType.swift in Sources */,
+				A2B3A00C186B839DEBE1FC1B2716E302 /* SwiftRex-dummy.m in Sources */,
+				7971372B67665ECD0DF477B2DD4F0AC1 /* TypeAlias.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C33D2D3718AE0A65C50CDAE948554D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BF71FDAF8F43F05A697A7BF0D3F84E /* CombineRex-dummy.m in Sources */,
+				FBD81AEDD16DB9D9A92AA36C42B8ABF6 /* ObservableViewModel.swift in Sources */,
+				488ECA191E160EC91FC8216244A8F12F /* PublisherType+Publisher.swift in Sources */,
+				0F673AE36068AA4803CA846C0867D2BE /* ReplayLastSubjectType+BehaviorSubject.swift in Sources */,
+				73D70803E4502DD9CCAC5634D92F9A00 /* SubjectType+PassthroughSubject.swift in Sources */,
+				57E0933A31AD1DAE3E88C3696E94D4BF /* SubscriberType+Subscriber.swift in Sources */,
+				D0259FCB7B634114E2020B203780950B /* SubscriptionType+Cancellable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E07D00EE7CF3CD299D74FEBCD78F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099A226EB9AAF73986B557FB405F7BFF /* Pods-Redux1-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A0F5E67927CB409722F993E8CB2A7E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CombineRex;
+			target = 3769B980009A300F52286A2BE0D57433 /* CombineRex */;
+			targetProxy = 677583236494E467087DFB04E0CD4414 /* PBXContainerItemProxy */;
+		};
+		86A499A99805654843CFB9F4F3D914FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftRex;
+			target = B7E46AEDED41B7542FB26E1422EA11F1 /* SwiftRex */;
+			targetProxy = DA8A32D506C31B016BC1AEDF5849333A /* PBXContainerItemProxy */;
+		};
+		8E76E6CAD69458190D438D346E88663A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftRex;
+			target = B7E46AEDED41B7542FB26E1422EA11F1 /* SwiftRex */;
+			targetProxy = 9DE16B0608F90C7DBF1F91B600E58CBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2AEF7CF26EF7BD550CDD143BFE9ACEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331F1B99296A8387E32949775837D036 /* Pods-Redux1.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Redux1/Pods-Redux1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Redux1/Pods-Redux1.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42D8D7B1E8BF29CF98BFFA62AB76AC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8522D789EAA8AA7B36D905A6A6E5E565 /* SwiftRex.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftRex/SwiftRex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftRex/SwiftRex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftRex/SwiftRex.modulemap";
+				PRODUCT_MODULE_NAME = SwiftRex;
+				PRODUCT_NAME = SwiftRex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B57AEB589A12D1421F797A4775D45EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D85D06ED31B43DEF56747B80324D760 /* SwiftRex.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftRex/SwiftRex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftRex/SwiftRex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftRex/SwiftRex.modulemap";
+				PRODUCT_MODULE_NAME = SwiftRex;
+				PRODUCT_NAME = SwiftRex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F98EA9425001C3520CB7D57E647A634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFBB1D53F3442FB807365F07F8961F0 /* Pods-Redux1.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Redux1/Pods-Redux1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Redux1/Pods-Redux1.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B422303D8FC2BF4400132E7D36FB144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C78CE3A8940538F161B83F5D4B876B /* CombineRex.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CombineRex/CombineRex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CombineRex/CombineRex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CombineRex/CombineRex.modulemap";
+				PRODUCT_MODULE_NAME = CombineRex;
+				PRODUCT_NAME = CombineRex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F04986ED72B20F79C8F74AF4EF8F74E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4523D8EE1D90FF7804D9B477996126D /* CombineRex.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CombineRex/CombineRex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CombineRex/CombineRex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CombineRex/CombineRex.modulemap";
+				PRODUCT_MODULE_NAME = CombineRex;
+				PRODUCT_NAME = CombineRex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26173DD58C790C004E97D9B95613DC8A /* Build configuration list for PBXNativeTarget "SwiftRex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B57AEB589A12D1421F797A4775D45EE /* Debug */,
+				42D8D7B1E8BF29CF98BFFA62AB76AC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A216187C826ECCADBA30EB3FC1122107 /* Build configuration list for PBXNativeTarget "CombineRex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B422303D8FC2BF4400132E7D36FB144 /* Debug */,
+				F04986ED72B20F79C8F74AF4EF8F74E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD82254986646F1FB43E9DD23D90492 /* Build configuration list for PBXNativeTarget "Pods-Redux1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F98EA9425001C3520CB7D57E647A634 /* Debug */,
+				2AEF7CF26EF7BD550CDD143BFE9ACEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

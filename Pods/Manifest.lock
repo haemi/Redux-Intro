@@ -1,0 +1,20 @@
+PODS:
+  - CombineRex (0.7.4):
+    - SwiftRex
+  - SwiftRex (0.7.4)
+
+DEPENDENCIES:
+  - CombineRex
+
+SPEC REPOS:
+  trunk:
+    - CombineRex
+    - SwiftRex
+
+SPEC CHECKSUMS:
+  CombineRex: aee29346366e83319efa88716f5331c24e14e357
+  SwiftRex: dc727905cf80eb958cfd612940ed8d16301850c3
+
+PODFILE CHECKSUM: 104e308f5e0b47440262a268d40da1bc75819695
+
+COCOAPODS: 1.9.3
