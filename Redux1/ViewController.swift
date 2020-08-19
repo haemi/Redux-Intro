@@ -17,13 +17,18 @@ struct CounterViewState: Equatable {
 
 enum AppAction {
     case count(CountAction)
-    // case another action category
-    // case and another action category
+    case shake(ShakeAction)
 }
 
 enum CountAction {
     case increment
     case decrement
+}
+
+enum ShakeAction {
+    case start
+    case shaken
+    case stop
 }
 
 enum CounterViewAction {
@@ -70,7 +75,7 @@ let appReducer = counterReducer.lift(
 let store = ReduxStoreBase<AppAction, AppState>(
     subject: .combine(initialValue: AppState(count: 0)),
     reducer: appReducer,
-    middleware: IdentityMiddleware() // <- No side-effects yet
+    middleware: LoggerMiddleware() <> ShakeMiddleware()
 )
 
 class ViewController: UIViewController {
@@ -83,6 +88,8 @@ class ViewController: UIViewController {
         subscription = viewModel.statePublisher
             .map { $0.formattedCount }
             .assign(to: \.text, on: label)
+
+        store.dispatch(.shake(.start))
     }
     @IBAction func minusButtonPressed(_ sender: Any) {
         viewModel.dispatch(.tapMinus)
@@ -93,3 +100,9 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        guard motion == .motionShake else { return }
+        NotificationCenter.default.post(name: NSNotification.Name.ShakeGesture, object: nil)
+    }
+}

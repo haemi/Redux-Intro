@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1084A14724ED495B00DD4859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1084A14524ED495B00DD4859 /* Main.storyboard */; };
 		1084A14924ED495F00DD4859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1084A14824ED495F00DD4859 /* Assets.xcassets */; };
 		1084A14C24ED495F00DD4859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1084A14A24ED495F00DD4859 /* LaunchScreen.storyboard */; };
+		10DFAC3A24ED542F0073C879 /* ShakeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFAC3924ED542F0073C879 /* ShakeMiddleware.swift */; };
+		10DFAC3C24ED56AE0073C879 /* LoggerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFAC3B24ED56AE0073C879 /* LoggerMiddleware.swift */; };
 		3BE8FF294011B9F85BF02238 /* Pods_Redux1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB71C4F5DC31BA4706388293 /* Pods_Redux1.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		1084A14824ED495F00DD4859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1084A14B24ED495F00DD4859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1084A14D24ED495F00DD4859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DFAC3924ED542F0073C879 /* ShakeMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeMiddleware.swift; sourceTree = "<group>"; };
+		10DFAC3B24ED56AE0073C879 /* LoggerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerMiddleware.swift; sourceTree = "<group>"; };
 		8A64DF6E037C2CA5BB103908 /* Pods-Redux1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux1.release.xcconfig"; path = "Target Support Files/Pods-Redux1/Pods-Redux1.release.xcconfig"; sourceTree = "<group>"; };
 		CCBF8FE21067422AA09FB097 /* Pods-Redux1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux1.debug.xcconfig"; path = "Target Support Files/Pods-Redux1/Pods-Redux1.debug.xcconfig"; sourceTree = "<group>"; };
 		FB71C4F5DC31BA4706388293 /* Pods_Redux1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +70,12 @@
 				1084A13F24ED495B00DD4859 /* AppDelegate.swift */,
 				1084A14124ED495B00DD4859 /* SceneDelegate.swift */,
 				1084A14324ED495B00DD4859 /* ViewController.swift */,
+				10DFAC3B24ED56AE0073C879 /* LoggerMiddleware.swift */,
 				1084A14524ED495B00DD4859 /* Main.storyboard */,
 				1084A14824ED495F00DD4859 /* Assets.xcassets */,
 				1084A14A24ED495F00DD4859 /* LaunchScreen.storyboard */,
 				1084A14D24ED495F00DD4859 /* Info.plist */,
+				10DFAC3924ED542F0073C879 /* ShakeMiddleware.swift */,
 			);
 			path = Redux1;
 			sourceTree = "<group>";
@@ -80,7 +86,6 @@
 				CCBF8FE21067422AA09FB097 /* Pods-Redux1.debug.xcconfig */,
 				8A64DF6E037C2CA5BB103908 /* Pods-Redux1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1084A14424ED495B00DD4859 /* ViewController.swift in Sources */,
+				10DFAC3C24ED56AE0073C879 /* LoggerMiddleware.swift in Sources */,
+				10DFAC3A24ED542F0073C879 /* ShakeMiddleware.swift in Sources */,
 				1084A14024ED495B00DD4859 /* AppDelegate.swift in Sources */,
 				1084A14224ED495B00DD4859 /* SceneDelegate.swift in Sources */,
 			);
